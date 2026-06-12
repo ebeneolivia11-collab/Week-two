@@ -1,0 +1,343 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Navigation */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    background:white;
+    border:2px solid green;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin:0 25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:black;
+    font-size:18px;
+}
+
+.auth button{
+    padding:8px 15px;
+    border:none;
+    cursor:pointer;
+}
+
+.login{
+    background:white;
+    border:1px solid gray;
+}
+
+.signup{
+    background:orange;
+    color:white;
+}
+
+/* Main Layout */
+
+.container{
+    display:flex;
+    margin:20px;
+    border:2px solid green;
+    padding:10px;
+}
+
+/* Left Side */
+
+.left{
+    flex:2;
+    margin-right:10px;
+}
+
+.card{
+    display:flex;
+    background:white;
+    padding:15px;
+    margin-bottom:15px;
+    border:2px solid #ddd;
+}
+
+.card img{
+    width:150px;
+    height:150px;
+    object-fit:cover;
+    margin-right:20px;
+}
+
+.content h2{
+    margin-bottom:10px;
+}
+
+.content p{
+    margin-bottom:15px;
+}
+
+.content button{
+    padding:10px 20px;
+    background:green;
+    color:white;
+    border:none;
+}
+
+/* Right Side */
+
+.right{
+    flex:1;
+    background:white;
+    padding:20px;
+    text-align:center;
+    border:2px solid #ddd;
+}
+
+.right h1{
+    margin-bottom:15px;
+}
+
+.right p{
+    margin-bottom:15px;
+}
+
+.right img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.right button{
+    width:100%;
+    padding:12px;
+    background:orange;
+    border:none;
+    color:white;
+    font-size:16px;
+}
+
+
+/* ABOUT PAGE */
+
+.about{
+    width:80%;
+    margin:auto;
+    background:white;
+    padding:30px;
+    margin-top:30px;
+}
+
+.about h1{
+    margin-bottom:20px;
+}
+
+.about p{
+    margin-bottom:15px;
+    line-height:1.6;
+}
+
+.about ul{
+    margin-left:20px;
+}
+
+/* PROPERTIES PAGE */
+
+.properties{
+    padding:30px;
+}
+
+.properties h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.property-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.property-card{
+    background:white;
+    padding:15px;
+    text-align:center;
+    border:1px solid #ddd;
+}
+
+.property-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.property-card h3{
+    margin-top:10px;
+}
+
+.property-card button{
+    margin-top:10px;
+    padding:10px 20px;
+    background:green;
+    color:white;
+    border:none;
+}
+
+/* CONTACT PAGE */
+
+.contact{
+    width:60%;
+    margin:auto;
+    background:white;
+    padding:30px;
+    margin-top:30px;
+}
+
+.contact h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.contact form{
+    display:flex;
+    flex-direction:column;
+}
+
+.contact label{
+    margin-top:10px;
+}
+
+.contact input,
+.contact textarea{
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+}
+
+.contact button{
+    margin-top:20px;
+    padding:12px;
+    background:green;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+
+.contact-info{
+    margin-top:30px;
+    padding:20px;
+    background:#f9f9f9;
+    border:1px solid #ddd;
+}
+
+.contact-info h2{
+    color:green;
+    margin-bottom:10px;
+    margin-top:15px;
+}
+
+.contact-info p{
+    margin-bottom:8px;
+    line-height:1.6;
+}
+
+
+footer{
+    background:#222;
+    color:white;
+    margin-top:40px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    padding:30px;
+}
+
+.copyright{
+    text-align:center;
+    padding:15px;
+    background:#111;
+}
+
+.social-links{
+    margin-top:15px;
+}
+
+.social-links a{
+    display:inline-block;
+    text-decoration:none;
+    background:green;
+    color:white;
+    padding:10px 15px;
+    margin:5px;
+    border-radius:5px;
+}
+
+.social-links a:hover{
+    background:darkgreen;
+}
+
+.form-container{
+    width:400px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.form-container h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.form-container form{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-container label{
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+.form-container input{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.form-container button{
+    margin-top:20px;
+    padding:12px;
+    background:green;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.form-container button:hover{
+    background:darkgreen;
+}
+
+.form-container p{
+    text-align:center;
+    margin-top:15px;
+}
